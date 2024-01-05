@@ -1,0 +1,50 @@
+[
+    {
+        "name": "App StarWars",
+        "lenguages": [
+            "./LogoTypescrip.svg",
+            "./LogoNext.svg",
+            "./LogoTailwind.svg",
+            "./LogoReact.svg"
+        ],
+        "description": "Aplicación web que permite a los usuarios explorar personajes de la saga de Star Wars y obtener información adicional sobre ellos. La aplicación utiliza la API SWAPI para obtener datos precisos sobre los personajes, y presenta una interfaz de usuario intuitiva y fácil de usar. Los usuarios pueden hacer clic en cada personaje para obtener información detallada sobre su historia, habilidades y características.",
+        "github": "https://github.com/emvmart23/CharactersWars",
+        "deploy":"",
+        "image": "./starwars.svg"
+    },
+    {
+        "name": "App Morty",
+        "lenguages": [
+            "./LogoJavascript.svg",
+            "./LogoVite.svg",
+            "./LogoTailwind.svg",
+            "./LogoReact.svg"
+        ],
+        "description":"La aplicación Rick and Morty Favorites permite a los usuarios buscar personajes y separarlos por personajes favoritos. Los usuarios pueden buscar personajes por nombre y agregarlos a su lista de personajes favoritos. La aplicación se centra en brindar una experiencia interactiva y personalizada a los usuarios, lo que les permite mantenerse actualizados sobre sus personajes favoritos y descubrir nueva información sobre la serie.",
+        "github": "https://github.com/emvmart23/AppMortRick",
+        "deploy":"https://app-web-emvmart23.vercel.app/",
+        "image": "./rick.svg"
+    },
+    {
+        "name": "Api User",
+        "lenguages": [
+            "./LogoNode.svg",
+            "./LogoTypescrip.svg",
+            "./LogoMongo.svg"
+        ],
+        "description":"",
+        "github": "",
+        "image": "./starwars.svg"
+    },
+    {
+        "name": "SafeHaven",
+        "lenguages": [
+            "TypeScript",
+            "Tailwind",
+            "",
+            "Cluster"
+        ],
+        "link": "",
+        "image": "./starwars.svg"
+    }
+]

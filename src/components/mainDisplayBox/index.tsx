@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 function mainDisplayBox() {
   return (
-    <div className="mx-auto mb-16 w-full min-w-[300px] h-[18.1rem]">
+    <div className="mx-auto mb-16 w-full min-w-[300px] h-[18.1rem] shadow-xl">
       <Card className="h-full lg:flex">
         <CardHeader className="md:flex md:flex-col">
           <CardTitle className="text-sm font-medium mb-32">

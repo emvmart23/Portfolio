@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useTitle } from "@/hooks/useTitle";
 import CardItem from "../components/cardItem";
-import DrawerItem from "../components/drawerProject";
+import DrawerProject from "../components/drawerProject";
 
 function Projects() {
+  useTitle("Proyectos");
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
-  const [project, setProject] = useState(null);
+  const [project, setProject] = useState<Projects | null>(null);
+
   return (
     <>
       <CardItem
@@ -12,9 +15,12 @@ function Projects() {
         setIsOpenDrawer={setIsOpenDrawer}
         setProject={setProject}
       />
-      <DrawerItem 
+
+      <DrawerProject
         isOpenDrawer={isOpenDrawer}
-        project={project} />
+        setIsOpenDrawer={setIsOpenDrawer}
+        project={project}
+      />
     </>
   );
 }

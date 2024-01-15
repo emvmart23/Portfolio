@@ -23,9 +23,9 @@ function Navbar({ btnHandleMenuBlock, isExpanded }: NavbarProps) {
 
       <TooltipProvider>
         <Tooltip delayDuration={5}>
-          <TooltipTrigger asChild>
+          <TooltipTrigger asChild className="hidden">
             <Button
-              className="w-[3rem] absolute top-[50rem] -right-[2rem]"
+              className="w-[3rem] absolute top-[45rem] lg:top-[49rem] -right-[2rem]"
               onClick={btnHandleMenuBlock}
             >
               <ArrowRightToLine

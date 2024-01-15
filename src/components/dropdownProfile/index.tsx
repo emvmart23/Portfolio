@@ -8,7 +8,6 @@ import {
   DropdownMenuLabel,
   DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
@@ -23,7 +22,7 @@ export function DropdownProfile() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="relative h-8 w-8 rounded-full border border-muted-foreground">
           <Avatar className="h-8 w-8">
-            <AvatarImage src="/avatars/01.png" alt="@shadcn" />
+            <AvatarImage src="" alt="@shadcn" />
             <AvatarFallback>MC</AvatarFallback>
           </Avatar>
         </Button>
@@ -39,10 +38,6 @@ export function DropdownProfile() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem>
-            Detalles
-            <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-          </DropdownMenuItem>
           <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <span>Tema</span>

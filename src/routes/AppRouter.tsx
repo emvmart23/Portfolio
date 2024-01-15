@@ -1,6 +1,8 @@
-import { Main } from "@/home/Main";
 import AppLayout from "@/layout";
-import Projects from "@/modules/Projects/page/Projects";
+import { lazy } from "react";
+const Main = lazy(() => import("@/home/Main"))
+const Projects = lazy(() => import("@/modules/Projects/page/Projects"))
+const Skills = lazy(() => import("@/modules/Skills/page/Skills"))
 
 export const appRoutes = [
   {
@@ -13,7 +15,7 @@ export const appRoutes = [
       },
       {
         path: "/skills",
-        element: <></>,
+        element: <Skills/>,
       },
       {
         path: "/projects",

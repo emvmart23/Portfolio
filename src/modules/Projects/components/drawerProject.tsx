@@ -1,57 +1,96 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { Github, Unlink } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 interface DrawerProps {
   isOpenDrawer: boolean;
   project: Projects | null;
+  setIsOpenDrawer: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-function DrawerItem({ isOpenDrawer, project }: DrawerProps) {
-  const variants = {
-    initial: {
-      x: "100%",
-    },
-    animate: {
-      x: 20,
-    },
-    exit: {
-      x: "100%",
-    },
-    transition: {
-      type: "spring",
-      bounce: 0,
-      duration: 0.4,
-    },
-  };
+const variants = {
+  initial: {
+    x: "100%",
+  },
+  animate: {
+    x: 20,
+  },
+  exit: {
+    x: "100%",
+  },
+  transition: {
+    type: "spring",
+    bounce: 0,
+    duration: 0.4,
+  },
+};
 
+function drawerProject({
+  isOpenDrawer,
+  project,
+  setIsOpenDrawer,
+}: DrawerProps) {
   return (
     <AnimatePresence>
       {isOpenDrawer && (
         <motion.div
-          initial={variants.initial}
-          animate={variants.animate}
-          exit={variants.exit}
-          transition={variants.transition}
-          className="fixed bottom-0 bg-muted shadow-lg top-0 right-0 w-full max-w-sm h-screen z-50 "
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 1 }}
+          onClick={() => setIsOpenDrawer(false)}
+          className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center cursor-pointer"
         >
-          <img src={project?.image} alt={project?.name} className="" />
-          <div className="p-5">
-            <h1 className="mb-3 relative right-[0.3rem] font-semibold text-xl">
-              {project?.name}
-            </h1>
-            <p className="font-medium mr-2 w-[98%] mx-auto mb-12">
-              {project?.description}
-            </p>
+          <motion.div
+            initial={variants.initial}
+            animate={variants.animate}
+            exit={variants.exit}
+            transition={variants.transition}
+            onClick={(e) => e.stopPropagation()}
+            className="fixed bottom-0 bg-muted shadow-lg top-0 right-0 w-full max-w-sm h-screen z-[100] break-all cursor-default"
+          >
+            <img
+              src={project?.image}
+              alt={project?.name}
+              className="inset-0 backdrop-filter backdrop-blur-lg"
+            />
+            <div className="p-7">
+              <h1 className="mb-3 relative right-[0.3rem] font-semibold text-xl">
+                {project?.name}
+              </h1>
+              <p className=" text-justify text-[0.9rem] mr-4 w-[98%] mx-auto mb-12">
+                {project?.description}
+              </p>
 
-            <div className="flex flex-wrap gap-3 ml-5">
-              {project?.lenguages.map((item, index) => (
-                <img key={index} src={item} alt={item} className="w-[5.5rem] shadow-black" />
-              ))}
+              <div className="flex flex-wrap justify-center gap-4 mr-5">
+                {project?.lenguages.map((item, index) => (
+                  <img
+                    key={index}
+                    src={item}
+                    alt={item}
+                    className="w-[2.6rem] h-[2.5rem]"
+                  />
+                ))}
+              </div>
+              <div className="relative top-[5rem] w-[35%]">
+                <NavLink
+                  className="rounded-xl p-1 hover:scale-125"
+                  to={project ? project?.github : " "}
+                >
+                  <Github className="w-9 h-9 text-primary" />
+                </NavLink>
+                <NavLink
+                  className="rounded-xl p-1 hover:scale-125"
+                  to={project ? project?.deploy : " "}
+                >
+                  <Unlink className="w-9 h-9 text-primary" />
+                </NavLink>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
 
-export default DrawerItem;
+export default drawerProject;

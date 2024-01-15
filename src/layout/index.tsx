@@ -1,10 +1,8 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { Outlet } from "react-router-dom";
-// import { LogoIcon, LogoIconExpanded } from "@/components/icons";
-// import UserNotification from "@/components/UserNotification";
-
 import { DropdownProfile } from "@/components/dropdownProfile";
 import Navbar from "@/components/navbar";
+import { BreadcrumbNames } from "@/components/BreadcrumbNames";
 
 function AppLayout() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -18,12 +16,12 @@ function AppLayout() {
       <div className="bg-background h-16 relative border-b-2 z-50 min-w-[530px] md:min-w-[540px]">
         <div className="h-full flex items-center justify-end p-6 gap-16">
           <div
-            className={`flex gap-16 justify-end w-full items-center pl-32 ${
+            className={`flex gap-16 justify-between w-full items-center pl-32 ${
               isExpanded && "pl-[21rem]"
             }`}
           >
+            <BreadcrumbNames />
             <div className="relative right-10">
-              {/* <UserNotification />  */}
               <DropdownProfile />
             </div>
           </div>
@@ -43,9 +41,11 @@ function AppLayout() {
         className={`${
           isExpanded &&
           "lg:left-[12rem] lg:w-[82%] xl:left-[12rem] xl:w-[85%] lg:scale-95 lg:origin-right"
-        } transition-all relative duration-200 h-screen px-16 py-16 left-[4.3rem] w-[85%] md:left-[7rem] md:w-[85%] lg:left-[10rem] min-w-[460px]`}
+        } transition-all relative duration-200 h-screen px-16 py-16 left-[4.6rem] w-[85%] md:left-[7rem] md:w-[85%] lg:left-[6rem] lg:w-[90%] min-w-[460px]`}
       >
-        <Outlet />
+        <Suspense fallback={<span>...</span>}>
+          <Outlet />
+        </Suspense>
       </div>
     </div>
   );

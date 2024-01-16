@@ -4,30 +4,30 @@ import { Slider } from "@/components/ui/slider";
 export const levelSkills = [
   {
     name: "React & JavaScript & HTML & CSS",
-    service: "Desarrollo de paginas web",
+    service: "Desarrollo de paginás web",
     level: (
-      <Slider className="w-[40%]" disabled defaultValue={[100]} step={1} />
+      <Slider className="w-[48%]" disabled defaultValue={[95]} step={1} />
     ),
   },
   {
     name: "ViteJS & NextsJS & NodeJS",
-    service: "",
+    service: "Herramientas de base de datos(MongoDB, etc)",
     level: (
-      <Slider className="w-[35%]" disabled defaultValue={[100]} step={1} />
+      <Slider className="w-[48%]" disabled defaultValue={[70]} step={1} />
     ),
   },
   {
     name: "Tailwind CSS & Chakra-UI",
     service: "Colaborador (Proyectos externos)",
     level: (
-      <Slider className="w-[30%]" disabled defaultValue={[100]} step={1} />
+      <Slider className="w-[48%]" disabled defaultValue={[70]} step={1} />
     ),
   },
   {
     name: "Git & Github & Scrum & Jest",
-    service: "Integracion de API",
+    service: "Integración de API",
     level: (
-      <Slider className="w-[48%]" disabled defaultValue={[100]} step={1} />
+      <Slider className="w-[48%]" disabled defaultValue={[80]} step={1} />
     ),
   },
 ];

@@ -19,15 +19,15 @@ export const iconProcess = [
     chevronIcon: <ChevronRight className="lg:mt-20 lg:w-12  lg:h-12 lg:rotate-[12deg]" />,
   },
   {
-    icon: <EllipseDesignIcon className="w-[50%]" />,
+    icon: <EllipseDesignIcon className="w-[60%]" />,
     chevronIcon: <ChevronRight className="w-10 lg:h-10" />,
   },
   {
-    icon: <EllipseCodeIcon className="w-[40%]" />,
+    icon: <EllipseCodeIcon className="w-[50%]" />,
     chevronIcon: <ChevronRight className=" lg:mb-9 w-8 lg:h-8 lg:rotate-[335deg]" />,
   },
   {
-    icon: <EllipseLaunchIcon className="w-[45%] relative bottom-[1rem]" />,
+    icon: <EllipseLaunchIcon className="w-[55%] relative bottom-[1rem]" />,
   },
 ];
 

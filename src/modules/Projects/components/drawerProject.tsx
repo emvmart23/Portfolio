@@ -71,19 +71,24 @@ function drawerProject({
                   />
                 ))}
               </div>
-              <div className="relative top-[5rem] w-[35%]">
+              <div className="ml-3 flex justify-between w-[75%] fixed top-[52rem]">
                 <NavLink
-                  className="rounded-xl p-1 hover:scale-125"
-                  to={project ? project?.github : " "}
+                  className={`bg-black  w-[8.4rem] justify-between items-center flex rounded-xl  p-2 hover:scale-110 ${project?.deploy == null ? "mx-auto" : ""}`}
+                  to={project ? project?.github : ""}
                 >
-                  <Github className="w-9 h-9 text-primary" />
+                  <Github className="w-7 h-7" color="white" />
+                  <span className="text-white">Repositorio</span>
                 </NavLink>
-                <NavLink
-                  className="rounded-xl p-1 hover:scale-125"
-                  to={project ? project?.deploy : " "}
-                >
-                  <Unlink className="w-9 h-9 text-primary" />
-                </NavLink>
+
+                {project?.deploy != null && (
+                  <NavLink
+                    className="bg-black w-[8.4rem] justify-between flex items-center rounded-xl p-2 hover:scale-110"
+                    to={project ? project?.deploy : ""}
+                  >
+                    <Unlink className="w-7 h-7" color="white" />
+                    <span className="text-white">Despliegue</span>
+                  </NavLink>
+                )}
               </div>
             </div>
           </motion.div>

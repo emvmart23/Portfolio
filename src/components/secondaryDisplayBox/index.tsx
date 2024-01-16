@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "../ui/separator";
 import { NavLink } from "react-router-dom";
@@ -21,11 +16,11 @@ function secondaryDisplayBox() {
         <TabsContent value="socials" className="h-[82%]">
           <Card className="h-full">
             <CardHeader>
-              <CardTitle className="text-md">Sigueme!</CardTitle>
+              <CardTitle className="text-md mb-1">Sígueme!</CardTitle>
               <p className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5">
                 Si quieres conocer más detalles sobre mi trayectoria y explorar
                 mis intereses, te animo a seguirme en las redes sociales. Allí
-                encontrarás mas informacion y enlaces.
+                encontrarás más información y enlaces.
               </p>
             </CardHeader>
             <CardContent className="space-y-1">
@@ -55,42 +50,45 @@ function secondaryDisplayBox() {
         <TabsContent value="study" className="h-[82%]">
           <div className="flex flex-col sm:flex-row gap-2 h-full">
             <Card className="h-full w-full lg:w-[50%]">
-              <CardHeader>
-                <CardTitle className="flex">
-                  <img
-                    src="./logoTecsup.webp"
-                    alt="Tecsup"
-                    className="w-[10rem] h-[2.5rem]"
-                  />
-                  <Framer className="relative top-1 left-2" />
+              <CardHeader className="mb-4">
+                <CardTitle className="flex gap-x-[0.1rem]">
+                  <span>Tecsup</span>
+
+                  <Framer color="#1d4ed8" />
                 </CardTitle>
+                <span className="text-sm lg:text-[0.9rem] text-muted-foreground">
+                  Diseño y Desarrollo de Software
+                </span>
               </CardHeader>
               <CardContent className="text-sm lg:text-[0.9rem] text-muted-foreground">
                 <span className="xl:ml-[1rem] mb-3 flex gap-2 items-center">
                   <Calendar className="" />
-                  Desde diciembre del 2022
+                  Desde marzo del 2021
                 </span>
                 <span className="xl:ml-[1rem] flex gap-2 items-center">
                   <CalendarCheck />
-                  Hasta marzo del 2023
+                  Hasta diciembre del 2023
                 </span>
               </CardContent>
             </Card>
             <Card className="w-full lg:w-[50%]">
-              <CardHeader>
-                <CardTitle className="flex">
-                  <img
-                    src="./logoAws.webp"
-                    alt="AWS"
-                    className="w-[7rem] h-[3.6rem] relative bottom-[0.5rem]"
-                  />
-                  <Framer className="relative top-1 right-4" />
+              <CardHeader className="mb-4">
+                <CardTitle className="flex gap-x-[0.1rem] items-center">
+                  <span className="">AWS</span>
+                  <Framer color="#fbbf24" />
                 </CardTitle>
+                <span className="text-sm lg:text-[0.9rem] text-muted-foreground">
+                  AWS Academy Cloud Foundations
+                </span>
               </CardHeader>
-              <CardContent className="text-sm lg:text-[0.9rem] bottom-4 relative text-muted-foreground">
+              <CardContent className="text-sm lg:text-[0.9rem] text-muted-foreground">
+                <span className="xl:ml-[1rem] mb-3 flex gap-2 items-center">
+                  <Calendar className="" />
+                  Desde mayo del 2023
+                </span>
                 <span className="xl:ml-[1rem] flex gap-2 items-center ">
                   <CalendarCheck />
-                  En junio 12 del 2023
+                  Hasta junio del 2023
                 </span>
               </CardContent>
             </Card>

@@ -7,7 +7,7 @@ export function BreadcrumbNames() {
   const routeNames = useMemo(
     () => [
       {
-        label: "Sobre mi",
+        label: "Sobre mí",
         href: "/",
         active: pathname !== "/skills" && pathname !== "/projects",
       },

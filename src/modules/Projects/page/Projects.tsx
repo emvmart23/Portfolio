@@ -7,7 +7,7 @@ function Projects() {
   useTitle("Proyectos");
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
   const [project, setProject] = useState<Projects | null>(null);
-
+  
   return (
     <>
       <CardItem

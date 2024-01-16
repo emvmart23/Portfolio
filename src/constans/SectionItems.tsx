@@ -2,7 +2,7 @@ import { Code2Icon, Layers3, UserRoundSearch } from "lucide-react";
 
 export const SectionsItems = [
   {
-    name:"Sobre mi",
+    name:"Sobre mí",
     url:"/",
     icon:<UserRoundSearch/>
   },

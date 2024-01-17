@@ -57,7 +57,7 @@ function drawerProject({
               <h1 className="mb-3 relative right-[0.3rem] font-semibold text-xl">
                 {project?.name}
               </h1>
-              <p className=" text-justify text-[0.9rem] mr-4 w-[98%] mx-auto mb-12">
+              <p className="text-start break-normal text-[0.9rem] mr-4 mx-auto mb-12 w-[95%]">
                 {project?.description}
               </p>
 

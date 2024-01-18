@@ -3,7 +3,7 @@ import AppLayout from "@/layout";
 import Projects from "@/modules/Projects/page/Projects";
 import Skills from "@/modules/Skills/page/Skills";
 
-export const appRoutes = [
+const appRoutes = [
   {
     path: "/",
     element: <AppLayout />,
@@ -23,3 +23,5 @@ export const appRoutes = [
     ],
   },
 ];
+
+export default appRoutes;

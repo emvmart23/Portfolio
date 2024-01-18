@@ -1,6 +1,6 @@
-import { Card, CardFooter } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { useState } from "react";
-import {data as dataProjets} from "../data/dataProjects" 
+import { data as dataProjets } from "../data/dataProjects";
 interface CardProps {
   isOpenDrawer: boolean;
   setIsOpenDrawer: (value: boolean) => void;
@@ -10,7 +10,7 @@ interface CardProps {
 function CardItem({ isOpenDrawer, setIsOpenDrawer, setProject }: CardProps) {
   const [isHover, setIsHover] = useState(false);
 
-  const handlerProject = (dataCard:any) => {
+  const handlerProject = (dataCard: any) => {
     setProject(dataCard);
     setIsOpenDrawer(!isOpenDrawer);
   };
@@ -27,7 +27,13 @@ function CardItem({ isOpenDrawer, setIsOpenDrawer, setProject }: CardProps) {
           onMouseOver={() => setIsHover(true)}
           onClick={() => handlerProject(data)}
         >
-          <img src={data.image} alt={data.image} className="rounded-t-sm object-cover w-full h-full" />
+          <CardContent className="p-0 w-[22.8rem] h-[17.8rem]">
+            <img
+              src={data.image}
+              alt={data.image}
+              className="rounded-t-sm object-cover w-full h-full"
+            />
+          </CardContent>
 
           <CardFooter>
             <h1 className="mt-3 font-[600] text-xs md:text-base">

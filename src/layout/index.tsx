@@ -1,9 +1,9 @@
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { DropdownProfile } from "@/components/dropdownProfile";
 import Navbar from "@/components/navbar";
 import { BreadcrumbNames } from "@/components/BreadcrumbNames";
-import { Loader } from "lucide-react";
+// import { Loader } from "lucide-react";
 
 function AppLayout() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -44,13 +44,7 @@ function AppLayout() {
           "lg:left-[12rem] lg:w-[82%] xl:left-[12rem] xl:w-[85%] lg:scale-95 lg:origin-right"
         } transition-all relative duration-200 h-screen px-16 py-16 left-[4.6rem] w-[85%] md:left-[7rem] md:w-[85%] lg:left-[6rem] lg:w-[90%] min-w-[460px]`}
       >
-        <Suspense
-          fallback={
-            <Loader className="mx-auto relative top-[50%] animate-spin" />
-          }
-        >
-          <Outlet />
-        </Suspense>
+        <Outlet />
       </div>
     </div>
   );

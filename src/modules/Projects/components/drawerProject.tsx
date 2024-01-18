@@ -46,7 +46,7 @@ function drawerProject({
             exit={variants.exit}
             transition={variants.transition}
             onClick={(e) => e.stopPropagation()}
-            className="fixed bottom-0 bg-muted shadow-lg top-0 right-0 w-full max-w-sm h-screen z-[100] break-all cursor-default"
+            className="fixed bottom-0 bg-muted shadow-lg top-0 right-0 w-full max-w-sm z-[100] break-all cursor-default"
           >
             <img
               src={project?.image}
@@ -71,9 +71,11 @@ function drawerProject({
                   />
                 ))}
               </div>
-              <div className="ml-3 flex justify-between w-[75%] fixed top-[52rem]">
+              <div className="ml-3 flex justify-between w-[75%] fixed top-[52rem] sm:top-[47rem] 2xl:top-[52rem]">
                 <NavLink
-                  className={`bg-black  w-[8.4rem] justify-between items-center flex rounded-xl  p-2 hover:scale-110 ${project?.deploy == null ? "mx-auto" : ""}`}
+                  className={`bg-black  w-[8.4rem] justify-between items-center flex rounded-xl  p-2 hover:scale-110 ${
+                    project?.deploy == null ? "mx-auto" : ""
+                  }`}
                   to={project ? project?.github : ""}
                 >
                   <Github className="w-7 h-7" color="white" />

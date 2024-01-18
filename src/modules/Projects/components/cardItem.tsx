@@ -1,6 +1,6 @@
 import { Card, CardFooter } from "@/components/ui/card";
 import { useState } from "react";
-import dataProjets from "../../../data/dataProjects.json";
+import {data as dataProjets} from "../data/dataProjects" 
 interface CardProps {
   isOpenDrawer: boolean;
   setIsOpenDrawer: (value: boolean) => void;

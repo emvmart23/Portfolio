@@ -1,5 +1,14 @@
 export const data = [
   {
+    name: "Api Autenticación",
+    lenguages: ["./logoJavascript.webp", "./logoNode.webp", "./logoMongo.webp"],
+    description:
+      "Esta de API de autenticación desarrollada en Node.js utiliza la biblioteca JSON Web Tokens (JWT) para implementar un sistema de autenticación seguro. La aplicación gestiona la autenticación de usuarios, almacenando y verificando las credenciales en una base de datos MongoDB",
+    deploy: null,
+    github: "https://github.com/emvmart23/ApiNotas",
+    image: "./apinotas.svg",
+  },
+  {
     name: "Crud con Cluster",
     lenguages: ["./logoTypescript.webp", "./logoNode.webp", "./logoMongo.webp"],
     description:
@@ -21,15 +30,6 @@ export const data = [
     github: "https://github.com/emvmart23/CharactersWars",
     deploy: "https://characters-wars.vercel.app/",
     image: "./starwars.svg",
-  },
-  {
-    name: "Api Autenticación",
-    lenguages: ["./logoJavascript.webp", "./logoNode.webp", "./logoMongo.webp"],
-    description:
-      "Esta API de autenticación desarrollada en Node.js utiliza la biblioteca crypto para implementar un sistema de autenticación seguro sin depender de JSON Web Tokens (JWT). La aplicación gestiona la autenticación de usuarios, almacenando y verificando las credenciales en una base de datos MongoDB.",
-    deploy: null,
-    github: "https://github.com/emvmart23/ApiNotas",
-    image: "./apinotas.svg",
   },
   {
     name: "App Morty",

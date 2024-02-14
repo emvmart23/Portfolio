@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
 
-export function BreadcrumbNames() {
+function BreadcrumbNames() {
   const { pathname } = useLocation();
 
   const routeNames = useMemo(
@@ -37,3 +37,5 @@ export function BreadcrumbNames() {
     </>
   );
 }
+
+export default BreadcrumbNames

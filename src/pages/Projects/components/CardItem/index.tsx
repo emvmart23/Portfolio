@@ -1,6 +1,7 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/Card";
 import { useState } from "react";
-import { data as dataProjets } from "../data/dataProjects";
+import { data as dataProjets } from "../../data/dataProjects";
+
 interface CardProps {
   isOpenDrawer: boolean;
   setIsOpenDrawer: (value: boolean) => void;

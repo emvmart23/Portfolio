@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/Card";
 function mainDisplayBox() {
   return (
     <div className="mx-auto mb-16 w-full min-w-[300px] h-[18.1rem] shadow-xl">

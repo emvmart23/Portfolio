@@ -1,5 +1,5 @@
 import { BatteryFull } from "lucide-react";
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/components/ui/Slider";
 
 export const levelSkills = [
   {

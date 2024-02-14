@@ -1,11 +1,14 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "../ui/separator";
-import { NavLink } from "react-router-dom";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs";
 import { socialItems } from "@/constans/SocialItems";
 import { Calendar, CalendarCheck, Framer } from "lucide-react";
+import { Separator } from "@/components/ui/Separator";
+import { NavLink } from "react-router-dom";
 
 function secondaryDisplayBox() {
+  const text = `Si quieres conocer más detalles sobre mi trayectoria y explorar
+  mis intereses, te animo a seguirme en las redes sociales. Allí
+  encontrarás más información y enlaces.`
   return (
     <div className="mx-auto mb-12 lg:mb-0 w-full min-w-[300px] shadow-xl">
       <Tabs defaultValue="socials" className="w-full h-full">
@@ -18,9 +21,7 @@ function secondaryDisplayBox() {
             <CardHeader>
               <CardTitle className="text-md mb-1">Sígueme!</CardTitle>
               <p className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5">
-                Si quieres conocer más detalles sobre mi trayectoria y explorar
-                mis intereses, te animo a seguirme en las redes sociales. Allí
-                encontrarás más información y enlaces.
+                {text}
               </p>
             </CardHeader>
             <CardContent className="space-y-1">

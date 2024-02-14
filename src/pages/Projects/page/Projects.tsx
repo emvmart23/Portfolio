@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useTitle } from "@/hooks/useTitle";
-import CardItem from "../components/cardItem";
-import DrawerProject from "../components/drawerProject";
+import { CardItem, DrawerProject } from "../components";
+
+
 
 function Projects() {
   useTitle("Proyectos");

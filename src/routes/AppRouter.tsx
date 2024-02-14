@@ -1,7 +1,7 @@
-import Main from "@/home/Main";
-import AppLayout from "@/layout";
-import Projects from "@/modules/Projects/page/Projects";
-import Skills from "@/modules/Skills/page/Skills";
+import { AppLayout } from "@/components";
+import Projects from "@/pages/Projects/page/Projects";
+import Skills from "@/pages/Skills/page/Skills";
+import Main from "@/pages/home";
 
 export const appRoutes = [
   {

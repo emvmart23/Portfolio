@@ -6,7 +6,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../ui/tooltip";
+} from "../ui/Tooltip";
 import { ArrowRightToLine } from "lucide-react";
 
 interface NavbarProps {

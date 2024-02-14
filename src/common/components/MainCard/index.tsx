@@ -1,14 +1,14 @@
-import dataExperience from "../../data/dataExperiencie.json";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import dataExperience from "../../../data/dataExperiencie.json"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { Briefcase, CalendarDays } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "../ui/tooltip";
+} from "../../../components/ui/Tooltip";
 
 function MainCard() {
   return (
@@ -45,7 +45,7 @@ function MainCard() {
                   <TooltipContent className="bg-primary" side="bottom">
                     <div className="w-[16rem] p-3 flex justify-between space-x-4">
                       <Avatar className="p-0">
-                        <Briefcase className="w-full "/>
+                        <Briefcase className="w-full " />
                       </Avatar>
                       <div className="space-y-1">
                         <h4 className="text-sm font-semibold">{lider}</h4>

@@ -5,7 +5,7 @@ import {
   EllipseDesignIcon,
   EllipseCodeIcon,
   EllipseLaunchIcon,
-} from "@/components/icons";
+} from "@/components/Icons";
 
 const button = {
   rest: { scale: 1 },

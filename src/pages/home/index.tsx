@@ -1,11 +1,9 @@
-import MainCard from "@/components/mainCard";
-import MainDisplayBox from "@/components/mainDisplayBox";
-import SecondaryDisplayBox from "@/components/secondaryDisplayBox";
+import { MainCard, MainDisplayBox, SecondaryDisplayBox } from "@/common/components";
 import { useTitle } from "@/hooks/useTitle";
 
 function Main() {
   useTitle("Inicio");
-  return ( 
+  return (
     <>
       <MainDisplayBox />
       <div className="flex flex-col lg:flex-row gap-x-4">

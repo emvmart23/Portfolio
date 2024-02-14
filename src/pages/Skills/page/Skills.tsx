@@ -1,6 +1,6 @@
 import { useTitle } from "@/hooks/useTitle";
-import DevelopmentCycle from "../components/developmentCycle";
-import SkillsDetails from "../components/skillsDetails";
+import DevelopmentCycle from "../components/DevelopmentCycle";
+import SkillsDetails from "../components/SkillsDetails";
 import { BugOff } from "lucide-react";
 
 function Skills() {

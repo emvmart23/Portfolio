@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,10 +12,10 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/DropdownMenu";
 import { useTheme } from "@/contexts/theme";
 
-export function DropdownProfile() {
+function DropdownProfile() {
   const { setTheme } = useTheme();
   return (
     <DropdownMenu>
@@ -61,3 +61,5 @@ export function DropdownProfile() {
     </DropdownMenu>
   );
 }
+
+export default DropdownProfile

@@ -18,10 +18,10 @@ function secondaryDisplayBox() {
           <Card className="h-full">
             <CardHeader>
               <AnimatedTitle text="Sígueme" className="font-bold mb-1" />
-              <AnimatedParagraph
-                text="Si quieres conocer más detalles sobre mi trayectoria y explorar
-                mis intereses, te animo a seguirme en las redes sociales. Allí encontrarás más información y enlaces."
-                className="text-sm lg:text-[0.9rem] text-muted-foreground " />
+              <p className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5">
+                Si quieres conocer más detalles sobre mi trayectoria y explorar mis intereses,
+                te animo a seguirme en las redes sociales. Allí encontrarás más información y enlaces.
+              </p>
             </CardHeader>
             <CardContent className="space-y-1">
               <Separator className="my-2 mb-7" />
@@ -56,7 +56,6 @@ function secondaryDisplayBox() {
                   <Framer color="#1d4ed8" />
                 </CardTitle>
                 <AnimatedParagraph text="Diseño y Desarrollo de Software" className="text-sm lg:text-[0.9rem] text-muted-foreground" />
-
               </CardHeader>
               <CardContent className="text-sm lg:text-[0.9rem] text-muted-foreground">
                 <span className="xl:ml-[1rem] mb-3 flex gap-2 items-center">

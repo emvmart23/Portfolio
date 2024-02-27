@@ -1,7 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/Card";
 import { useState } from "react";
 import { data as dataProjets } from "../../data/dataProjects";
-import { Eye } from "lucide-react";
 
 interface CardProps {
   isOpenDrawer: boolean;

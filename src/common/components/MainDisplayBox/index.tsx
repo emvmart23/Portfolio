@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader } from "../../../components/ui/Card";
 function mainDisplayBox() {
   return (
     <div className="mx-auto mb-16 w-full min-w-[300px] h-[18.1rem] shadow-xl">
-      <Card className="h-full lg:flex">
+      <Card className="h-full w-full lg:flex">
         <CardHeader className="md:flex md:flex-col">
           <AnimatedTitle text="Marzo 29, 2002" className="text-sm font-medium mb-32" />
           <AnimatedTitle text="Hola, Soy Max Martinez Saavedra" className="text-md 2xl:text-[1.7rem] font-bold" />

@@ -21,7 +21,7 @@ function secondaryDisplayBox() {
               <AnimatedParagraph
                 text="Si quieres conocer más detalles sobre mi trayectoria y explorar
                 mis intereses, te animo a seguirme en las redes sociales. Allí encontrarás más información y enlaces."
-                className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5" />
+                className="text-sm lg:text-[0.9rem] text-muted-foreground " />
             </CardHeader>
             <CardContent className="space-y-1">
               <Separator className="my-2 mb-7" />

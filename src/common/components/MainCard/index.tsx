@@ -1,7 +1,7 @@
 import dataExperience from "../../../data/dataExperiencie.json"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Briefcase, CalendarDays } from "lucide-react";
 import {
   Tooltip,
@@ -9,16 +9,17 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "../../../components/ui/Tooltip";
+import { AnimatedParagraph, AnimatedTitle } from "@/components/Animation";
 
 function MainCard() {
   return (
     <div className="w-[15rem] sm:w-[80%] max-w-xl min-w-[300px] lg:min-w-[409px] mx-auto shadow-xl">
       <Card className="w-full h-full">
         <CardHeader className="mb-2">
-          <CardTitle>Experiencia Laboral</CardTitle>
+          <AnimatedTitle text="Experiencia Laboral" className="font-bold" />
         </CardHeader>
         <CardContent className="grid grid-cols-1 gap-3">
-          {dataExperience.map(({ company, email, responsible_by, date, lider }, index) => (
+          {dataExperience.map(({ logo, company, email, responsible_by, date, lider }, index) => (
             <div
               key={index}
               className="flex items-center space-x-3 justify-between mb-4"
@@ -26,13 +27,13 @@ function MainCard() {
               <div className="flex items-center space-x-2 mb-5">
                 <Avatar>
                   <AvatarImage src="" />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarFallback>
+                    <AnimatedTitle text={logo} className="font-medium"/>
+                  </AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="text-sm font-medium leading-none">{company}</p>
-                  <p className="text-[0.5rem] sm:text-[0.9rem] text-muted-foreground">
-                    {email}
-                  </p>
+                  <AnimatedParagraph text={company} className="text-sm font-medium leading-none"/>
+                  <AnimatedParagraph text={email} className="text-[0.5rem] sm:text-[0.9rem] text-muted-foreground" />
                 </div>
               </div>
               <TooltipProvider>

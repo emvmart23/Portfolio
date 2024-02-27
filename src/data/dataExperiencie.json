@@ -1,5 +1,6 @@
 [
     {
+        "logo": "SI",
         "lider": "Lider: Jorge Estrada",
         "company": "Silabuz",
         "email": "jorge.estrada@silabuz.com",
@@ -7,6 +8,7 @@
         "date": "Unido diciembre 2022 / F"
     },
     {
+        "logo": "CO",
         "lider": "Lider: Caleb Reategui",
         "company": "Consigue Ventas",
         "email": "Atencion@consigueventas.com",

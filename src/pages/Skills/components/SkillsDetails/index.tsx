@@ -1,5 +1,6 @@
 import { BatteryFull } from "lucide-react";
 import { Slider } from "@/components/ui/Slider";
+import { AnimatedParagraph, AnimatedTitle } from "@/components/Animation";
 
 export const levelSkills = [
   {
@@ -36,27 +37,23 @@ function SkillsDetails() {
   return (
     <>
       <div className="w-full md:min-w-[453px]">
-        <h2 className="font-bold text-[1.4rem] mb-7">
-          Acerca de mi habilidades...
-        </h2>
+        <AnimatedTitle text="Acerca de mi habilidades..." className="font-bold text-[1.4rem] mb-7"/>
         <ul className="w-full">
           {levelSkills.map((level, index) => (
             <li key={index} className="flex items-center gap-8 mb-4">
               {level.level}
-              {level.name}
+              <AnimatedParagraph text={level.name}/>
             </li>
           ))}
         </ul>
       </div>
       <div className="w-full md:min-w-[270px]">
-        <h2 className="font-bold text-[1.4rem] mb-7">
-          Acerca de mis servicios...
-        </h2>
+        <AnimatedTitle text="Acerca de mis servicios..." className="font-bold text-[1.4rem] mb-7"/>
         <ul className="font-semibold text-center">
           {levelSkills.map((servi, index) => (
             <li key={index} className="mb-4 flex gap-10">
               <BatteryFull />
-              {servi.service}
+              <AnimatedParagraph text={servi.service}/>
             </li>
           ))}
         </ul>

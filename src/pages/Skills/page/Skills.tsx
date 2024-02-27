@@ -13,7 +13,7 @@ function Skills() {
       <div className="mx-auto relative w-[90%] h-[55%] xl:hidden">
         <BugOff className=" w-[8rem] h-[8rem] mx-auto top-[25%] relative" />
       </div>
-      <div className="flex flex-col lg:flex-row gap-[4rem] xl:gap-[12rem] relative md:left-[2rem] xl:left-[6rem] ">
+      <div className="flex flex-col lg:flex-row gap-[4rem] xl:gap-[12rem] relative md:left-[1rem] xl:left-[5rem] ">
         <SkillsDetails />
       </div>
     </section>

@@ -25,7 +25,7 @@ function AppLayout() {
         </div>
         <div
           className={` ${isExpanded ? "w-[15.4rem] h-[1280px]" : "w-20 h-screen"
-            } duration-200 bg-background lg:h-screen absolute top-0 border-r`}
+            } duration-200 bg-background lg:h-screen fixed top-0 border-r`}
         >
           <Navbar
             isExpanded={isExpanded}

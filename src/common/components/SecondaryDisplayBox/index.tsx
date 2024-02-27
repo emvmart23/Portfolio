@@ -4,11 +4,9 @@ import { socialItems } from "@/constans/SocialItems";
 import { Calendar, CalendarCheck, Framer } from "lucide-react";
 import { Separator } from "@/components/ui/Separator";
 import { NavLink } from "react-router-dom";
+import { AnimatedParagraph, AnimatedTitle } from "@/components/Animation";
 
 function secondaryDisplayBox() {
-  const text = `Si quieres conocer más detalles sobre mi trayectoria y explorar
-  mis intereses, te animo a seguirme en las redes sociales. Allí
-  encontrarás más información y enlaces.`
   return (
     <div className="mx-auto mb-12 lg:mb-0 w-full min-w-[300px] shadow-xl">
       <Tabs defaultValue="socials" className="w-full h-full">
@@ -19,10 +17,11 @@ function secondaryDisplayBox() {
         <TabsContent value="socials" className="h-[82%]">
           <Card className="h-full">
             <CardHeader>
-              <CardTitle className="text-md mb-1">Sígueme!</CardTitle>
-              <p className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5">
-                {text}
-              </p>
+              <AnimatedTitle text="Sígueme" className="font-bold mb-1" />
+              <AnimatedParagraph
+                text="Si quieres conocer más detalles sobre mi trayectoria y explorar
+                mis intereses, te animo a seguirme en las redes sociales. Allí encontrarás más información y enlaces."
+                className="text-sm lg:text-[0.9rem] text-muted-foreground relative top-5" />
             </CardHeader>
             <CardContent className="space-y-1">
               <Separator className="my-2 mb-7" />
@@ -53,43 +52,39 @@ function secondaryDisplayBox() {
             <Card className="h-full w-full lg:w-[50%]">
               <CardHeader className="mb-4">
                 <CardTitle className="flex gap-x-[0.1rem]">
-                  <span>Tecsup</span>
-
+                  <AnimatedTitle text="Tecsup" />
                   <Framer color="#1d4ed8" />
                 </CardTitle>
-                <span className="text-sm lg:text-[0.9rem] text-muted-foreground">
-                  Diseño y Desarrollo de Software
-                </span>
+                <AnimatedParagraph text="Diseño y Desarrollo de Software" className="text-sm lg:text-[0.9rem] text-muted-foreground" />
+
               </CardHeader>
               <CardContent className="text-sm lg:text-[0.9rem] text-muted-foreground">
                 <span className="xl:ml-[1rem] mb-3 flex gap-2 items-center">
                   <Calendar className="" />
-                  Desde marzo del 2021
+                  <AnimatedParagraph text="Desde marzo del 2021" />
                 </span>
                 <span className="xl:ml-[1rem] flex gap-2 items-center">
                   <CalendarCheck />
-                  Hasta diciembre del 2023
+                  <AnimatedParagraph text="Hasta diciembre del 2023" />
                 </span>
               </CardContent>
             </Card>
             <Card className="w-full lg:w-[50%]">
               <CardHeader className="mb-4">
                 <CardTitle className="flex gap-x-[0.1rem] items-center">
-                  <span className="">AWS</span>
+                  <AnimatedTitle text="AWS" />
                   <Framer color="#fbbf24" />
                 </CardTitle>
-                <span className="text-sm lg:text-[0.9rem] text-muted-foreground">
-                  AWS Academy Cloud Foundations
-                </span>
+                <AnimatedParagraph text="AWS Academy Cloud Foundations" className="text-sm lg:text-[0.9rem] text-muted-foreground" />
               </CardHeader>
               <CardContent className="text-sm lg:text-[0.9rem] text-muted-foreground">
                 <span className="xl:ml-[1rem] mb-3 flex gap-2 items-center">
                   <Calendar className="" />
-                  Desde mayo del 2023
+                  <AnimatedParagraph text="Desde mayo del 2023" />
                 </span>
                 <span className="xl:ml-[1rem] flex gap-2 items-center ">
                   <CalendarCheck />
-                  Hasta junio del 2023
+                  <AnimatedParagraph text="Hasta junio del 2023" />
                 </span>
               </CardContent>
             </Card>

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/Card";
 import { useState } from "react";
 import { data as dataProjets } from "../../data/dataProjects";
+import { Eye } from "lucide-react";
 
 interface CardProps {
   isOpenDrawer: boolean;
@@ -35,7 +36,6 @@ function CardItem({ isOpenDrawer, setIsOpenDrawer, setProject }: CardProps) {
               className="rounded-t-sm object-cover w-full h-full"
             />
           </CardContent>
-
           <CardFooter>
             <h1 className="mt-3 font-[600] text-xs md:text-base">
               {data.name}

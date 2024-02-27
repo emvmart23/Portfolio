@@ -53,7 +53,26 @@ function drawerProject({
               alt={project?.name}
               className="inset-0 backdrop-filter backdrop-blur-lg"
             />
+            <div className="ml-3 flex justify-between w-[80%] pl-5 pt-5 ">
+              <NavLink
+                className={`bg-black  w-[8.4rem] justify-between items-center flex rounded-xl  p-2 hover:scale-110 ${project?.deploy == null ? "" : ""
+                  }`}
+                to={project ? project?.github : ""}
+              >
+                <Github className="w-7 h-7" color="white" />
+                <span className="text-white">Repositorio</span>
+              </NavLink>
 
+              {project?.deploy != null && (
+                <NavLink
+                  className="bg-black w-[8.4rem] justify-between flex items-center rounded-xl p-2 hover:scale-110"
+                  to={project ? project?.deploy : ""}
+                >
+                  <Unlink className="w-7 h-7" color="white" />
+                  <span className="text-white">Despliegue</span>
+                </NavLink>
+              )}
+            </div>
             <div className="p-7">
               <h1 className="mb-3 relative right-[0.3rem] font-semibold text-xl">
                 {project?.name}
@@ -71,26 +90,6 @@ function drawerProject({
                     className="w-[2.6rem] h-[2.5rem]"
                   />
                 ))}
-              </div>
-              <div className="ml-3 flex justify-between w-[75%] fixed top-[52rem] sm:top-[47rem] 2xl:top-[52rem]">
-                <NavLink
-                  className={`bg-black  w-[8.4rem] justify-between items-center flex rounded-xl  p-2 hover:scale-110 ${project?.deploy == null ? "mx-auto" : ""
-                    }`}
-                  to={project ? project?.github : ""}
-                >
-                  <Github className="w-7 h-7" color="white" />
-                  <span className="text-white">Repositorio</span>
-                </NavLink>
-
-                {project?.deploy != null && (
-                  <NavLink
-                    className="bg-black w-[8.4rem] justify-between flex items-center rounded-xl p-2 hover:scale-110"
-                    to={project ? project?.deploy : ""}
-                  >
-                    <Unlink className="w-7 h-7" color="white" />
-                    <span className="text-white">Despliegue</span>
-                  </NavLink>
-                )}
               </div>
             </div>
           </motion.div>

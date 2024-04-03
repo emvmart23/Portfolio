@@ -1,7 +1,50 @@
 export const data = [
   {
+    name: "Cerrajeria Apertura porte",
+    lenguages: [
+      {
+        logo: "./logoTypescript.webp",
+        name: "Typescript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "NodeJS",
+      },
+      {
+        logo: "./logoReact.webp",
+        name: "ReactJS",
+      },
+      {
+        logo: "./logoVite.webp",
+        name: "ViteJS",
+      },
+      {
+        logo: "./logoTailwind.webp",
+        name: "Tailwind",
+      },
+    ],
+    description:
+      "Apertura Porte es una aplicación web desarrollada utilizando React.js, TypeScript y Tailwind CSS para mostrar servicios de cerrajería de calidad a nuestros clientes. Nuestro objetivo es proporcionar una experiencia en línea fácil y segura para quienes necesitan servicios de cerrajería, desde la apertura de puertas hasta la instalación de cerraduras.",
+    deploy: "https://apertura-porte.vercel.app/",
+    github: "https://github.com/HAms25/Cerrajeria-Martinez",
+    image: "./cerrajeria.svg",
+  },
+  {
     name: "Api Autenticación",
-    lenguages: ["./logoJavascript.webp", "./logoNode.webp", "./logoMongo.webp"],
+    lenguages: [
+      {
+        logo: "./logoJavascript.webp",
+        name: "Javascript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "Nodejs",
+      },
+      {
+        logo: "./logoMongo.webp",
+        name: "MongoDB",
+      },
+    ],
     description:
       "Esta de API de autenticación desarrollada en Node.js utiliza la biblioteca JSON Web Tokens (JWT) para implementar un sistema de autenticación seguro. La aplicación gestiona la autenticación de usuarios, almacenando y verificando las credenciales en una base de datos MongoDB",
     deploy: null,
@@ -10,7 +53,20 @@ export const data = [
   },
   {
     name: "Crud con Cluster",
-    lenguages: ["./logoTypescript.webp", "./logoNode.webp", "./logoMongo.webp"],
+    lenguages: [
+      {
+        logo: "./logoTypescript.webp",
+        name: "Typescript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "Nodejs",
+      },
+      {
+        logo: "./logoMongo.webp",
+        name: "MongoDB",
+      },
+    ],
     description:
       "Este CRUD desarrollado en TypeScript utiliza Node.js como entorno de ejecución y una base de datos MongoDB alojada en un clúster. La aplicación implementa las operaciones básicas de Crear, Leer, Actualizar y Eliminar (CRUD) para gestionar datos de usuarios. El uso de TypeScript proporciona un código más robusto y mantenible, mientras que la base de datos en clúster garantiza la escalabilidad y disponibilidad de la aplicación.",
     deploy: null,
@@ -20,10 +76,22 @@ export const data = [
   {
     name: "App StarWars",
     lenguages: [
-      "./logoTypescript.webp",
-      "./logoNext.webp",
-      "./logoTailwind.webp",
-      "./logoReact.webp",
+      {
+        logo: "./logoTypescript.webp",
+        name: "Typescript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "Nodejs",
+      },
+      {
+        logo: "./logoReact.webp",
+        name: "ReactJS",
+      },
+      {
+        logo: "./logoNext.webp",
+        name: "NextJS",
+      },
     ],
     description:
       "Mini Aplicación web que permite a los usuarios explorar personajes de la saga de Star Wars y obtener información adicional sobre ellos. La aplicación utiliza la API SWAPI(Multiples apis) para obtener datos precisos sobre los personajes, y presenta una interfaz fácil de usar. Los usuarios pueden hacer clic en cada personaje para obtener información detallada sobre su historia, habilidades y características.",
@@ -34,10 +102,22 @@ export const data = [
   {
     name: "App Morty",
     lenguages: [
-      "./logoJavascript.webp",
-      "./logoVite.webp",
-      "./logoTailwind.webp",
-      "./logoReact.webp",
+      {
+        logo: "./logoJavascript.webp",
+        name: "Typescript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "Nodejs",
+      },
+      {
+        logo: "./logoReact.webp",
+        name: "ReactJS",
+      },
+      {
+        logo: "./logoTailwind.webp",
+        name: "Tailwind",
+      }
     ],
     description:
       "La aplicación Rick and Morty permite a los usuarios buscar personajes y separarlos por personajes favoritos. Los usuarios pueden buscar personajes por nombre y agregarlos a su lista de personajes favoritos. La aplicación se centra en brindar una experiencia interactiva y personalizada a los usuarios, lo que les permite mantenerse actualizados sobre sus personajes favoritos y descubrir nueva información sobre la serie.",

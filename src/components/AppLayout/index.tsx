@@ -11,7 +11,7 @@ function AppLayout() {
 
   return (
     <div className="w-full h-screen flex flex-col">
-      <div className="bg-background h-16 relative border-b-2 z-50 min-w-[530px] md:min-w-[540px]">
+      <div className="bg-background h-16 sticky top-0 border-b-2 z-50 min-w-[530px] md:min-w-[540px]">
         <div className="h-full flex items-center justify-end p-6 gap-16">
           <div
             className={`flex gap-16 justify-between w-full items-center pl-32 ${isExpanded && "pl-[21rem]"

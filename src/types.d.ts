@@ -1,8 +1,13 @@
+interface Props { 
+  name:string
+  logo:string
+}
+
 interface Projects {
-    name:string
-    lenguages: string[]
-    description: string
-    github: string
-    deploy:string
-    image:string
+  name: string;
+  lenguages: Props[];
+  description: string;
+  github: string;
+  deploy: string;
+  image: string;
 }

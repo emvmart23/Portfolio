@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 interface DrawerProps {
   isOpenDrawer: boolean;
   project: Projects | null;
-  setIsOpenDrawer: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsOpenDrawer: (value: boolean) => void;
 }
 
 const variants = {
@@ -81,12 +81,12 @@ function drawerProject({
                 {project?.description}
               </p>
 
-              <div className="flex flex-wrap justify-center gap-4 mr-5">
-                {project?.lenguages.map((item, index) => (
+              <div className=" grid grid-cols-3 w-52 gap-y-6 mx-auto">
+                {project?.lenguages.map(({ logo }, index) => (
                   <img
                     key={index}
-                    src={item}
-                    alt={item}
+                    src={logo}
+                    alt={logo}
                     className="w-[2.6rem] h-[2.5rem]"
                   />
                 ))}

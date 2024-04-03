@@ -10,7 +10,7 @@ function mainDisplayBox() {
           <p className="text-xs md:text-[0.9rem] text-muted-foreground  min-w-[320px]">
             Desarrollador de software, estoy constantemente actualizando mis
             conocimientos sobre las últimas tendencias y tecnologías para
-            ofrecer soluciones eficientes."</p>
+            ofrecer soluciones eficientes.</p>
         </CardHeader>
         <CardContent className="invisible lg:visible p-0 w-full h-full">
           <img

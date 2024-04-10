@@ -1,5 +1,35 @@
 export const data = [
   {
+    name: "Todo App",
+    lenguages: [
+      {
+        logo: "./logoTypescript.webp",
+        name: "Typescript",
+      },
+      {
+        logo: "./logoNode.webp",
+        name: "NodeJS",
+      },
+      {
+        logo: "./logoReact.webp",
+        name: "ReactJS",
+      },
+      {
+        logo: "./logoNext.webp",
+        name: "NextJS",
+      },
+      {
+        logo: "./logoRedux.webp",
+        name: "Redux",
+      },
+    ],
+    description:
+      "Con Todo App, los usuarios pueden crear nuevas tareas, marcarlas como completadas y eliminarlas según sea necesario. La integración de Redux Toolkit permite una gestión eficiente del estado de la aplicación, garantizando una experiencia de usuario sin problemas y consistente. Además, todas las tareas se almacenan localmente en el LocalStorage del navegador, lo que proporciona persistencia de datos entre sesiones.",
+    deploy: "https://todo-redux-toolkit-sandy.vercel.app/",
+    github: "https://github.com/emvmart23/Todo-redux-toolkit",
+    image: "./todo.svg",
+  },
+  {
     name: "Cerrajeria Apertura porte",
     lenguages: [
       {

@@ -9,12 +9,17 @@ function BreadcrumbNames() {
       {
         label: "Sobre mí",
         href: "/",
-        active: pathname !== "/skills" && pathname !== "/projects",
+        active: pathname !== "/skills" && pathname !== "/projects"  && pathname !== "/experience",
       },
       {
         label: "Hablidades",
         href: "/Skills",
-        active: pathname !== "/" && pathname !== "/projects",
+        active: pathname !== "/" && pathname !== "/projects" && pathname !== "/experience",
+      },
+      {
+        label: "Experiencia",
+        href: "/experience",
+        active: pathname !== "/projects"  && pathname !== "/skills" && pathname !== "/",
       },
       {
         label: "Proyectos",

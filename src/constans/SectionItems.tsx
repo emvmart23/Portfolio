@@ -1,4 +1,4 @@
-import { Code2Icon, Layers3, UserRoundSearch } from "lucide-react";
+import { Briefcase, Code2Icon, Layers3, UserRoundSearch } from "lucide-react";
 
 export const SectionsItems = [
   {
@@ -12,9 +12,14 @@ export const SectionsItems = [
     icon:<Code2Icon/>
   },
   {
+    name:"Experiencia",
+    url:"/experience",
+    icon:<Briefcase />
+  },
+  {
     name:"Proyectos",
     url:"/projects",
     icon:<Layers3/>
-  },
+  }
 ];
 

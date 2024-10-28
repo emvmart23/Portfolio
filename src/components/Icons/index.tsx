@@ -1,18 +1,11 @@
-import { useTheme } from "@/contexts/theme";
+import { UsethemesIcons } from "@/hooks/useThemesIcons";
 
 interface IconProps {
   className?: string;
 }
 
-export function themesIcons() {
-  const { theme } = useTheme();
-  const bgColor = theme == "dark" ? "white" : "black";
-  const text = theme == "dark" ? "black" : "white";
-  return { bgColor, text };
-}
-
 export function EllipseDesignIcon({ className }: IconProps) {
-  const { bgColor, text } = themesIcons();
+  const { bgColor, text } = UsethemesIcons();
   return (
     <svg
       width="192"
@@ -33,7 +26,7 @@ export function EllipseDesignIcon({ className }: IconProps) {
 }
 
 export function EllipseConceptIcon({ className }: IconProps) {
-  const { bgColor, text } = themesIcons();
+  const { bgColor, text } = UsethemesIcons();
   return (
     <svg
       width="192"
@@ -54,7 +47,7 @@ export function EllipseConceptIcon({ className }: IconProps) {
 }
 
 export function EllipseCodeIcon({ className }: IconProps) {
-  const { bgColor, text } = themesIcons();
+  const { bgColor, text } = UsethemesIcons();
   return (
     <svg
       width="192"
@@ -75,7 +68,7 @@ export function EllipseCodeIcon({ className }: IconProps) {
 }
 
 export function EllipseLaunchIcon({ className }: IconProps) {
-  const { bgColor, text } = themesIcons();
+  const { bgColor, text } = UsethemesIcons();
   return (
     <svg
       width="192"
@@ -95,4 +88,26 @@ export function EllipseLaunchIcon({ className }: IconProps) {
   );
 }
 
- 
+export default function BarIcon({ className }: IconProps) {
+  const { bgColor } = UsethemesIcons();
+  return (
+    <svg
+      width="54"
+      height="220"
+      viewBox="0 0 54 400"
+      fill={bgColor}
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <ellipse cx="27" cy="25" rx="26.3158" ry="25" fill={bgColor} />
+      <line
+        x1="28.1014"
+        y1="49.9675"
+        x2="31.8982"
+        y2="399.947"
+        stroke={bgColor}
+        stroke-width="6"
+      />
+    </svg>
+  );
+}

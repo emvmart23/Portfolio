@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 export const socialItems = [
   {
     logo: <Linkedin />,
@@ -10,8 +10,4 @@ export const socialItems = [
     institute: "./logoAws.webp",
     link: "https://github.com/emvmart23",
   },
-  {
-    logo: <Instagram />,
-    link: "https://www.instagram.com/max_saavedra29/",
-  },
-]
+];

@@ -1,5 +1,26 @@
 export const data = [
   {
+    name: "Api club",
+    lenguages: [
+      {
+        logo: "./logoPhp.webp",
+        name: "PHP",
+      },
+      {
+        logo: "./logoLaravel.webp",
+        name: "Laravel",
+      },
+      {
+        logo: "./logoJwt.webp",
+        name: "Jwt",
+      },
+    ],
+    description: "Esta API está diseñada para facilitar la gestión de pedidos y la asistencia de usuarios en tiempo real. Permite que múltiples usuarios realicen solicitudes simultáneamente, garantizando un flujo de trabajo eficiente y organizado. Además, la API ofrece la funcionalidad de aperturar una caja diaria, registrando la fecha y almacenándola como referencia para futuras operaciones. Esto permite filtrar y consultar las tablas relacionadas por dicha fecha, mejorando así la organización y el acceso a la información. Con esta API, las empresas pueden optimizar la gestión de pedidos y la atención al cliente, asegurando un servicio ágil y efectivo.",
+    deploy: null,
+    github: "https://github.com/emvmart23/Backend-club",
+    image: "./backendclub.svg",
+  },
+  {
     name: "Todo App",
     lenguages: [
       {
@@ -147,7 +168,7 @@ export const data = [
       {
         logo: "./logoTailwind.webp",
         name: "Tailwind",
-      }
+      },
     ],
     description:
       "La aplicación Rick and Morty permite a los usuarios buscar personajes y separarlos por personajes favoritos. Los usuarios pueden buscar personajes por nombre y agregarlos a su lista de personajes favoritos. La aplicación se centra en brindar una experiencia interactiva y personalizada a los usuarios, lo que les permite mantenerse actualizados sobre sus personajes favoritos y descubrir nueva información sobre la serie.",

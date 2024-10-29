@@ -15,7 +15,7 @@ export const data = [
         name: "Jwt",
       },
     ],
-    description: "Esta API está diseñada para facilitar la gestión de pedidos y la asistencia de usuarios en tiempo real. Permite que múltiples usuarios realicen solicitudes simultáneamente, garantizando un flujo de trabajo eficiente y organizado. Además, la API ofrece la funcionalidad de aperturar una caja diaria, registrando la fecha y almacenándola como referencia para futuras operaciones. Esto permite filtrar y consultar las tablas relacionadas por dicha fecha, mejorando así la organización y el acceso a la información. Con esta API, las empresas pueden optimizar la gestión de pedidos y la atención al cliente, asegurando un servicio ágil y efectivo.",
+    description: "Esta API está diseñada para facilitar la gestión de pedidos y la asistencia de usuarios en tiempo real. Permite que múltiples usuarios realicen solicitudes simultáneamente, garantizando un flujo de trabajo eficiente y organizado. Además, la API ofrece la funcionalidad de aperturar una caja diaria, registrando la fecha y almacenándola como referencia para futuras operaciones. Esto permite filtrar y consultar las tablas relacionadas por dicha fecha, mejorando así la organización y el acceso a la información. Con esta API, los locales pueden optimizar la gestión de pedidos y la atención al cliente, asegurando un servicio ágil y efectivo.",
     deploy: null,
     github: "https://github.com/emvmart23/Backend-club",
     image: "./backendclub.svg",

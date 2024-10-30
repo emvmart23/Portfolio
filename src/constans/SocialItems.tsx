@@ -3,7 +3,7 @@ export const socialItems = [
   {
     logo: <Linkedin />,
     institute: "./logoTecsup.webp",
-    link: "https://www.linkedin.com/in/max-saavedraa/",
+    link: "https://www.linkedin.com/in/max-saave29/",
   },
   {
     logo: <Github />,

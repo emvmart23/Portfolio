@@ -4,7 +4,7 @@ import { AnimatedParagraph, AnimatedTitle } from "@/components/Animation";
 
 export const levelSkills = [
   {
-    name: "React & JavaScript & HTML & CSS",
+    name: "React.js & JavaScript & HTML & CSS",
     service: "Desarrollo de paginás web",
     level: <Slider className="w-[48%]" disabled defaultValue={[95]} step={1} />,
   },
@@ -14,7 +14,7 @@ export const levelSkills = [
     level: <Slider className="w-[48%]" disabled defaultValue={[70]} step={1} />,
   },
   {
-    name: "Tailwind CSS & Chakra-UI",
+    name: "Tailwind CSS & Chakra-UI && Figma",
     service: "Colaborador (Proyectos externos)",
     level: <Slider className="w-[48%]" disabled defaultValue={[70]} step={1} />,
   },
